@@ -1,21 +1,32 @@
+body {
+	text-align: center;
+	background-color: grey;
+}
+
 .button-group {
-	margin-left: 800px;
+
 	margin-bottom: 60px;
 }
 
-
-table {
+.grid {
 	margin: auto;
-	border-collapse: collapse;
+	height: 500px;
+	width: 500px;
 }
 
+
 .cell {
-	background-color: black;
-	height: 60px;
-	width: 60px;
-	border: 0px;
+	background-color: white;
+	display: inline-block;
+	box-sizing: border-box;
+	line-height: 0px;
+	float: left;
 }
 
 .paint {
+	background-color: black;
+}
+
+.erase {
 	background-color: white;
 }
