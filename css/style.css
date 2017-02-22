@@ -1,4 +1,11 @@
+.button-group {
+	margin-left: 800px;
+	margin-bottom: 60px;
+}
+
+
 table {
+	margin: auto;
 	border-collapse: collapse;
 }
 
@@ -7,4 +14,8 @@ table {
 	height: 60px;
 	width: 60px;
 	border: 0px;
+}
+
+.paint {
+	background-color: white;
 }
