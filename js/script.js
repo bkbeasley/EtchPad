@@ -3,6 +3,8 @@ $(document).ready(function() {
 	clearGrid();
 	paintCell();
 	setGridSize();
+	initColorPicker();
+	
 });
 
 
@@ -53,5 +55,15 @@ function setGridSize() {
 		displayGrid(userSize);
 	});
 }
+
+function initColorPicker() {
+	$("#color-picker").spectrum({
+    color: "#000000",
+    chooseText: "Choose color"
+	});
+}
+
+
+
 	
 

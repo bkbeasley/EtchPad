@@ -12,6 +12,7 @@ body {
 	margin: auto;
 	height: 500px;
 	width: 500px;
+	cursor: none;
 }
 
 
@@ -29,4 +30,10 @@ body {
 
 .erase {
 	background-color: white;
+}
+
+#paint-brush {
+	background:  no-repeat url(../images/paint_brush.png);
+	height: 50px;
+	width: 50px;
 }
