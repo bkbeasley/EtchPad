@@ -4,6 +4,7 @@ $(document).ready(function() {
 	paintCell();
 	setGridSize();
 	initColorPicker();
+	changeColor();
 	
 });
 
@@ -31,17 +32,18 @@ function displayGrid(gridArea = null) {
 	
 }
 
-function paintCell() {
+function paintCell(color) {
 	//Change the color of each cell a user hovers over
 	$(document).on("mouseover", ".cell", function() {
-		$(this).addClass("paint");
+		$(this).css("background-color", color);
 	});
 }
+
 
 function clearGrid() {
 	//Clear the grid
 	$("#clear-grid").click(function() {
-		$(".cell").removeClass("paint");
+		$(".cell").css("background-color", "#ffffff")
 	});
 }
 
@@ -58,11 +60,19 @@ function setGridSize() {
 
 function initColorPicker() {
 	$("#color-picker").spectrum({
-    color: "#000000",
-    chooseText: "Choose color"
+	    color: "#000000",
+	    chooseText: "Choose color",
 	});
+	paintCell("#000000");
 }
 
+function changeColor() {
+	$("#color-picker").spectrum({
+		change: function(color) {
+			 paintCell(color.toHexString());
+		}
+	});
+}
 
 
 	
