@@ -1,6 +1,13 @@
 body {
 	text-align: center;
-	background-color: grey;
+	font-family: 'Nunito Sans', sans-serif;
+	background-size: 100%;
+	background-image: url(../images/art.jpg);
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 70px;
 }
 
 .button-group {
@@ -28,8 +35,3 @@ body {
 	background-color: white;
 }
 
-#paint-brush {
-	background:  no-repeat url(../images/paint_brush.png);
-	height: 50px;
-	width: 50px;
-}

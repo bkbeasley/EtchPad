@@ -59,14 +59,16 @@ function setGridSize() {
 }
 
 function initColorPicker() {
+	//Initialize the color picker
 	$("#color-picker").spectrum({
 	    color: "#000000",
-	    chooseText: "Choose color",
+	    chooseText: "Choose color"
 	});
 	paintCell("#000000");
 }
 
 function changeColor() {
+	//Change the color of cells using the color picker
 	$("#color-picker").spectrum({
 		change: function(color) {
 			 paintCell(color.toHexString());
